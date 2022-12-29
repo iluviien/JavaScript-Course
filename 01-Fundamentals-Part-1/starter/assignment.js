@@ -5,13 +5,13 @@ assign their values according to your own country (population in millions)
 2. Log their values to the console
 */
 
-// let country = "Portugal";
-//let continent = "Europe";
-let population = 10;
-//console.log(country);
-//console.log(continent);
-//console.log(population);
-
+/* const country = "Isle of Man";
+const continent = "Europe";
+let population = 86000;
+console.log(country);
+console.log(continent);
+console.log(population);
+*/
 // Assignment 2
 /* LECTURE: Data Types
 1. Declare a variable called 'isIsland' and set its value according to your
@@ -21,7 +21,8 @@ country. The variable should hold a Boolean value. Also declare a variable
 to the console
 */
 
-/*let isIsland = false;
+/* 
+const isIsland = true;
 let language;
 console.log(typeof isIsland);
 console.log(typeof population);
@@ -37,11 +38,12 @@ change, and which might change?). Then, change these variables to const.
 3. Try to change one of the changed variables now, and observe what happens
 */
 
-language = "portuguese";
-const country = "Portugal";
+//language = "english";
+/*const country = "Portugal";
 const continent = "Europe";
 const isIsland = false;
 //isIsland = true;
+*/
 
 //Assignment 4
 /* LECTURE: Basic Operators
@@ -56,8 +58,10 @@ have less people than the average country?
 which contains a string with this format: 'Portugal is in Europe, and its 11 million
 people speak portuguese.
 */
+
+/*
 console.log(population / 2);
-population++;
+//population++;
 console.log(population);
 console.log(population > 6);
 console.log(population < 33);
@@ -70,9 +74,40 @@ const description =
   " million people speak " +
   language;
 console.log(description);
-
+*/
 //Assignment 5
 /* LECTURE: Strings and Template Literals
 1. Recreate the 'description' variable from the last assignment, this time
 using the template literal syntax.
+*/
+/*console.log(
+  `${country} is in ${continent}, and it's ${population} million people speak ${language}!`
+);
+*/
+
+//Assignment 6
+
+/* LECTURE: Taking Decisions: if / else Statements
+1. If your country's population is greater that 33 million, log a string like this to the
+console: 'Portugal's population is above average'. Otherwise, log a string like
+'Portugal's population is 22 million below average' (the 22 is the average of 33
+minus the country's population)
+2. After checking the result, change the population temporarily to 13 and then to
+130. See the different results, and set the population back to original.
+*/
+
+/* 
+ 
+ if (population >= 33000000) {
+  console.log(`Isle of Man's population is above average`);
+} else {
+  console.log(
+    `Isle of Man's population is ${33000000 - population} below average`
+  );
+}
+console.log("9" - "5");
+console.log("19" - "13" + "17");
+console.log("19" - "13" + 17);
+console.log("123" < 57);
+console.log(5 + 6 + "4" + 9 - 4 - 2);
 */
