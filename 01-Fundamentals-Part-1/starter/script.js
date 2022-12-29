@@ -86,7 +86,7 @@ console.log(ageAlina, ageSarah, averageAge);
 
 //CODING CHALLENGE 1
 
-/* let weightMark = 78;
+let weightMark = 78;
 let heightMark = 1.69;
 
 let weightJohn = 92;
@@ -98,7 +98,16 @@ console.log(bmiMark);
 console.log(bmiJohn);
 const markHigherBMI = bmiMark > bmiJohn;
 console.log(markHigherBMI);
-*/
+
+//CODING CHALLENGE 2
+
+if (bmiMark > bmiJohn) {
+  console.log(
+    `Mark's BMI of ${bmiMark} is higher than John's BMI of ${bmiJohn}`
+  );
+} else {
+  console.log(`John's BMI of ${bmiJohn} is higher than ${bmiJohn}`);
+}
 
 /*const firstName = "Alina";
 const job = "analyst";
