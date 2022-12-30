@@ -86,28 +86,28 @@ console.log(ageAlina, ageSarah, averageAge);
 
 //CODING CHALLENGE 1
 
-let weightMark = 78;
-let heightMark = 1.69;
+// let weightMark = 78;
+// let heightMark = 1.69;
 
-let weightJohn = 92;
-let heightJohn = 1.95;
+// let weightJohn = 92;
+// let heightJohn = 1.95;
 
-const bmiMark = weightMark / heightMark ** 2;
-const bmiJohn = weightJohn / heightJohn ** 2;
-console.log(bmiMark);
-console.log(bmiJohn);
-const markHigherBMI = bmiMark > bmiJohn;
-console.log(markHigherBMI);
+// const bmiMark = weightMark / heightMark ** 2;
+// const bmiJohn = weightJohn / heightJohn ** 2;
+// console.log(bmiMark);
+// console.log(bmiJohn);
+// const markHigherBMI = bmiMark > bmiJohn;
+// console.log(markHigherBMI);
 
-//CODING CHALLENGE 2
+// //CODING CHALLENGE 2
 
-if (bmiMark > bmiJohn) {
-  console.log(
-    `Mark's BMI of ${bmiMark} is higher than John's BMI of ${bmiJohn}`
-  );
-} else {
-  console.log(`John's BMI of ${bmiJohn} is higher than ${bmiJohn}`);
-}
+// if (bmiMark > bmiJohn) {
+//   console.log(
+//     `Mark's BMI of ${bmiMark} is higher than John's BMI of ${bmiJohn}`
+//   );
+// } else {
+//   console.log(`John's BMI of ${bmiJohn} is higher than ${bmiJohn}`);
+// }
 
 /*const firstName = "Alina";
 const job = "analyst";
@@ -157,3 +157,69 @@ if (birthYear <= 2000) {
 }
 console.log(century);
 */
+
+// type conversion
+// const inputYear = "1991";
+// console.log(Number(inputYear), inputYear);
+// console.log(Number(inputYear) + 18);
+
+// console.log(Number("Jonas"));
+// console.log(typeof NaN);
+
+// console.log(String(23), 23);
+
+// //type coercion
+
+// console.log("I am " + 23 + " years old.");
+// console.log("23" - "10" - 3);
+// console.log("23" / "2");
+
+// let n = "1" + 1;
+// n = n - 1;
+// console.log(n);
+
+// truthy or falsy values
+// 5 falsy values: 0, '', undefined, null, NaN;
+
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean("Jonas"));
+// console.log(Boolean({}));
+
+// const money = 100;
+// if (money) {
+//   console.log(`Don't spend it all ;)`);
+// } else {
+//   console.log(`You should get a job`);
+// }
+// let height = 0;
+// if (height) {
+//   console.log("YAY! Height is defined!");
+// } else {
+//   console.log("Height is not defined");
+// }
+
+// Equality operators == and ===
+
+// const age = "18";
+// if (age === 18) console.log("You just became an adult(strict)");
+
+// if (age == 18) console.log("You just became an adult(loose)");
+
+// const favourite = Number(prompt("What is your favourite number?"));
+// console.log(favourite);
+// console.log(typeof favourite);
+
+// if (favourite === 23) {
+//   console.log("Cool! 23 is an amazing number!");
+// } else if (favourite === 7) {
+//   console.log("7 is also a cool number!");
+// } else if (favourite === 9) {
+//   console.log("9 is also a cool number!");
+// } else {
+//   console.log("Number is not 23 or 7 or 9");
+// }
+// // is different operator
+// if (favourite !== 23) {
+//   console.log("Why not 23?");
+// }
