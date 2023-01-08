@@ -223,3 +223,108 @@ console.log(century);
 // if (favourite !== 23) {
 //   console.log("Why not 23?");
 // }
+
+//Boolean logic: and, or, and not operator
+
+// const hasDriversLicense = true; // A
+// const hasGoodVision = true; //B
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//   console.log("Sarah is able to drive");
+// } else {
+//   console.log("Someone else should drive");
+// }
+
+// const isTired = true; // C
+// console.log(hasDriversLicense && hasGoodVision && isTired);
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//   console.log("Sarah is able to drive");
+// } else {
+//   console.log("Someone else should drive");
+// }
+
+// CODING CHALLENGE 3:
+
+// const dolphinsScoreAverage = (97 + 112 + 81) / 3;
+// const koalasScoreAverage = (109 + 95 + 86) / 3;
+
+// console.log(dolphinsScoreAverage, koalasScoreAverage);
+
+// if (dolphinsScoreAverage > koalasScoreAverage && dolphinsScoreAverage >= 100) {
+//   console.log("Dolphins win the trophy!");
+// } else if (
+//   koalasScoreAverage > dolphinsScoreAverage &&
+//   koalasScoreAverage <= 100
+// ) {
+//   console.log("Koalas win the trophy!");
+// } else if (
+//   dolphinsScoreAverage === koalasScoreAverage &&
+//   dolphinsScoreAverage >= 100 &&
+//   koalasScoreAverage >= 100
+// ) {
+//   console.log("Both win the trophy!");
+// } else {
+//   console.log("No one wins the trophy");
+// }
+
+// The Switch Statement
+
+// const day = "friday";
+
+// switch (day) {
+//   case "monday": // day === 'monday'
+//     console.log("Plan my course structure");
+//     console.log("Go to coding meetup");
+//     break;
+//   case "tuesday":
+//     console.log("Prepare theory videos");
+//     break;
+//   case "wednesday":
+//   case "thursday":
+//     console.log("Write code examples");
+//     break;
+//   case "friday":
+//     console.log("Record videos");
+//     break;
+//   case "saturday":
+//   case "sunday":
+//     console.log("Enjoy the weekend :D");
+//     break;
+//   default:
+//     console.log("Not a valid day!");
+// }
+
+// if (day === "monday") {
+//   console.log("Plan my course structure");
+//   console.log("Go to coding meetup");
+// } else if (day === "tuesday") {
+//   console.log("Prepare theory videos");
+// } else if (day === "wednesday" || day === "thursday") {
+//   console.log("Write code examples");
+// } else if (day === "friday") {
+//   console.log("Record videos");
+// } else if (day === "saturday" || day === "sunday") {
+//   console.log("Enjoy the weekend :D");
+// } else {
+//   console.log("Not a valid day!");
+// }
+
+// Statements and expressions
+
+// expression
+3 + 4;
+1991;
+true && false && !false;
+
+//statements
+if (23 > 10) {
+  const str = "23 is bigger";
+}
+
+console.log(`I'm ${2037 - 1991}years old `);
