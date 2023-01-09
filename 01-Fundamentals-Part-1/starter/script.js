@@ -318,13 +318,45 @@ console.log(century);
 // Statements and expressions
 
 // expression
-3 + 4;
-1991;
-true && false && !false;
+// 3 + 4;
+// 1991;
+// true && false && !false;
 
-//statements
-if (23 > 10) {
-  const str = "23 is bigger";
-}
+// //statements
+// if (23 > 10) {
+//   const str = "23 is bigger";
+// }
 
-console.log(`I'm ${2037 - 1991}years old `);
+// console.log(`I'm ${2037 - 1991} years old `);
+
+// The conditional (ternerary) operator
+
+// const age = 23;
+// // age >= 18
+// //   ? console.log("I like to drink wine")
+// //   : console.log("I like to drink water");
+
+// age >= 18 ? "wine" : "water";
+
+// const drink = age >= 18 ? "wine" : "water";
+// console.log(drink); // using ternerary operator
+
+// let drink2;
+// if (age >= 18) {
+//   drink2 = "wine";
+// } else {
+//   drink2 = "water";
+// }
+// console.log(drink2); // this is to see the difference the ternerary operator makes when applied this way
+
+// console.log(` I like to drink ${age >= 18 ? "wine" : "water"}`);
+
+// CODING CHALLENGE 4
+// const bill = 430;
+// const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+
+// console.log(
+//   `The bill was ${bill}, the tip was ${tip} and the total value was ${
+//     tip + bill
+//   }.`
+// );
