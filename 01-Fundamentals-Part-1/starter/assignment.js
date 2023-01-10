@@ -143,3 +143,27 @@ situation
 // } else {
 //   console.log("No borders!");
 // }
+
+// const country = "Isle of Man";
+// const population = 0.8;
+// const isIsland = true;
+// const languageSpoken = "English";
+
+// if (languageSpoken === "English" && population <= 50 && !isIsland) {
+//   console.log(`You should live in ${country}`);
+// } else {
+//   console.log(`${country} does not meet your criteria:(`);
+// }
+
+// const population = 20;
+// const country = "Isle of Man";
+
+// population > 33
+//   ? console.log(`${country}'s population ia above average`)
+//   : console.log(`${country}'s population is below average`);
+
+// //OR COULD BE DONE LIKE
+
+// console.log(
+//   `${country}'s population is ${population > 33 ? "above" : "below"} average `
+// );
