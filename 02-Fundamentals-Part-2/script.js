@@ -63,27 +63,27 @@
 
 //CODING CHALLENGE 1
 
-const calcAverage = (a, b, c) => (a + b + c) / 3;
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
 
-console.log(calcAverage(3, 4, 5));
+// console.log(calcAverage(3, 4, 5));
 
-let scoreDolphins = calcAverage(44, 23, 71);
-let scoreKoalas = calcAverage(65, 54, 49);
+// let scoreDolphins = calcAverage(44, 23, 71);
+// let scoreKoalas = calcAverage(65, 54, 49);
 
-console.log(scoreDolphins, scoreKoalas);
+// console.log(scoreDolphins, scoreKoalas);
 
-const checkWinner = function (avgDolphins, avgKoalas) {
-  if (avgDolphins >= 2 * avgKoalas) {
-    console.log(`Dolphins with the trophy(${avgDolphins} vs ${avgKoalas})`);
-  } else if (avgKoalas >= 2 * avgDolphins) {
-    console.log(`Koalas win the trophy.(${avgKoalas} vs ${avgDolphins})`);
-  } else {
-    console.log(`No team wins...`);
-  }
-};
+// const checkWinner = function (avgDolphins, avgKoalas) {
+//   if (avgDolphins >= 2 * avgKoalas) {
+//     console.log(`Dolphins with the trophy(${avgDolphins} vs ${avgKoalas})`);
+//   } else if (avgKoalas >= 2 * avgDolphins) {
+//     console.log(`Koalas win the trophy.(${avgKoalas} vs ${avgDolphins})`);
+//   } else {
+//     console.log(`No team wins...`);
+//   }
+// };
 
-checkWinner(scoreDolphins, scoreKoalas);
-checkWinner(576, 111);
+// checkWinner(scoreDolphins, scoreKoalas);
+// checkWinner(576, 111);
 
 // //Test 2 data
 
@@ -179,33 +179,134 @@ checkWinner(576, 111);
 
 // Objects
 
-const alina = {
-  firstName: "Alina",
-  lastName: "Stefanica",
-  age: 2037 - 1994,
-  job: "student",
-  friends: ["Michael", "Peter", "Steven"]
-};
-console.log(alina);
+// const alina = {
+//   firstName: "Alina",
+//   lastName: "Stefanica",
+//   age: 2037 - 1994,
+//   job: "student",
+//   friends: ["Michael", "Peter", "Steven"]
+// };
+// console.log(alina);
 
-console.log(alina.lastName);
-console.log(alina["lastName"]);
+// console.log(alina.lastName);
+// console.log(alina["lastName"]);
 
-const nameKey = "Name";
-console.log(alina["first" + nameKey]);
-console.log(alina["last" + nameKey]);
+// const nameKey = "Name";
+// console.log(alina["first" + nameKey]);
+// console.log(alina["last" + nameKey]);
 
-const interestedIn = prompt(
-  "What do you want to know about Alina? Choose between firstName, lastName, age, job and friends."
-);
-console.log(alina[interestedIn]);
+// const interestedIn = prompt(
+//   "What do you want to know about Alina? Choose between firstName, lastName, age, job and friends."
+// );
+// console.log(alina[interestedIn]);
 
-if (alina[interestedIn]) {
-  console.log(alina[interestedIn]);
-} else {
-  console.log(
-    "Wrong request! Choose between firstName, lastName, age, job and friends."
-  );
+// if (alina[interestedIn]) {
+//   console.log(alina[interestedIn]);
+// } else {
+//   console.log(
+//     "Wrong request! Choose between firstName, lastName, age, job and friends."
+//   );
+// }
+
+// alina.location = "Portugal";
+// alina["twitter"] = "@whateverman";
+// console.log(alina);
+
+//mini challenge
+//Alina has 3 friends, and his best friend is called Michael.
+
+// console.log(
+//   `${alina.firstName} has ${alina.friends.length} friends and her best friends is ${alina.friends[0]}.`
+// );
+
+// Object methods
+
+// const alina = {
+//   firstName: "Alina",
+//   lastName: "Stefanica",
+//   birthYear: 1994,
+//   job: "compliance",
+//   friends: ["Michael", "Peter", "Steven"],
+//   hasDriversLicense: false,
+//   // calcAge: function (birthYear) {
+//   //   return 2037 - birthYear;
+
+//   //
+
+//   calcAge: function () {
+//     this.age = 2037 - this.birthYear;
+//     return this.age;
+//   },
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.calcAge()} year old ${
+//       alina.job
+//     }, and she has ${this.driversLicense ? "a" : "no"} drivers license`;
+//   }
+// };
+
+// console.log(alina.calcAge());
+
+// console.log(alina.age);
+// console.log(alina.age);
+// console.log(alina.age);
+// // console.log(alina["calcAge"](1994));
+
+// //Challenge
+// // Alina is a  43 year old analyst, and he has a/no drivers license'
+// console.log(alina.getSummary());
+
+// Coding challenge 3
+
+// const mark = {
+//   fullName: "Mark Miller",
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.height ** 2;
+//     return this.bmi;
+//   }
+// };
+
+// const john = {
+//   fullName: "John Smith",
+//   mass: 92,
+//   height: 1.95,
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.height ** 2;
+//     return this.bmi;
+//   }
+// };
+
+// mark.calcBMI();
+// john.calcBMI();
+// console.log(john.bmi);
+// console.log(mark.bmi);
+
+// if (mark.calcBMI() > john.calcBMI()) {
+//   console.log(
+//     `${mark.fullName}'s BMI (${mark.bmi}) is higher than John's(${john.bmi}).`
+//   );
+// } else {
+//   console.log(
+//     `${john.fullName}'s BMI (${john.bmi}) is higher than Mark's(${mark.bmi}).`
+//   );
+// }
+
+// The FOR loop
+
+// for loop keeps running while condition is TRUE
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep}`);
+// }
+
+const alinaArray = [
+  "Alina",
+  "Stefanica",
+  2037 - 1991,
+  "analyst",
+  ["Michael", "Peter", "Steven"]
+];
+
+for (let i = 0; i < alinaArray.length; i++) {
+  console.log(alinaArray[i]);
 }
-
-jonas.location;

@@ -66,3 +66,43 @@
 
 // neighbours[neighbours.indexOf("Bulgaria")] = "Republic of Sweden";
 // console.log(neighbours);
+
+// Introduction to objects
+
+// const myCountry = {
+//   country: "Japan",
+//   capital: "Tokyo",
+//   language: "Japanese",
+//   population: 125,
+//   neighbours: ["North Pacific Ocean", "South Korea"],
+
+//   describe: function () {
+//     console.log(
+//       `${this.country} has ${this.population} million ${this.language} speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+//     );
+//   },
+
+//   checkIsland: function () {
+//     this.isIsland = this.neighbours.length === 0 ? true : false;
+//   }
+// };
+// myCountry.describe();
+// myCountry.checkIsland();
+// console.log(myCountry);
+
+// // Dot vs bracket notation
+
+// // console.log(
+// //   `${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
+// // );
+
+// myCountry.population = 125 + 2;
+
+// console.log(myCountry.population);
+// myCountry["population"] = 127 - 2;
+// console.log(myCountry.population);
+
+//The For loop
+// for (let voter = 1; voter <= 50; voter++) {
+//   console.log(`Voter number ${voter} is currently voting.`);
+// }
