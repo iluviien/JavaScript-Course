@@ -48,6 +48,77 @@ const restaurant = {
   }
 };
 
+//Local assignment operator
+const rest1 = {
+  name: "Capri",
+  //numGuests: 20
+  numGuests: 0
+};
+const rest2 = {
+  name: "La Piazza",
+  owner: "Giovanni Rossi"
+};
+//OR ASSIGNMENT OPERATOR
+// rest1.numGuests = rest1.numGuests || 10;
+// rest2.numGuests = rest2.numGuests || 10;
+// rest1.numGuests ||= 10;
+// rest2.numGuests ||= 10;
+
+//nullish(null or undefined) assignment operator
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
+//AND assignment operator
+// rest1.owner = rest1.owner && "<ANONYMOUS>";
+// rest2.owner = rest2.owner && "<ANONYMOUS>";
+
+rest1.ower &&= "<ANONYMOUS>";
+rest2.owner &&= "<ANONYMOUS>";
+console.log(rest1);
+
+console.log(rest2);
+
+///////////////////////
+/*
+// 108.The nullish coalescing operator
+restaurant.numGuests = 0;
+const guest = restaurant.numGuests || 10;
+console.log(guest);
+//nullish : null and undefined - not 0 or ''
+const guestCorrect = restaurant.numGuests ?? 10;
+console.log(guestCorrect);
+*/
+//////////////////////////////////
+/*
+//107. Short circuiting: && and || = Use any data type, return any data type , short-circuiting,
+console.log("-------------------OR--------------------------------");
+console.log(3 || "Jonas");
+console.log("" || "Jonas");
+console.log(true || 0);
+console.log(undefined || null);
+
+console.log(undefined || 0 || "" || "Hello" || 23 || null);
+
+restaurant.numGuests = 0;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+
+console.log("------------AND-------------");
+console.log(0 && "Jonas");
+console.log(7 && "Jonas");
+console.log("Hello" && 23 && null & "jonas");
+
+// Practical example
+
+if (restaurant.orderPizza) {
+  restaurant.orderPizza("mushrooms", "spinach");
+}
+restaurant.orderPizza && restaurant.orderPizza("mushrooms", "spinach");
+*/
+///////////////////////////////////////////////////////////
+/*
 // Rest Pattern and Parameters
 // 1)Destructuring
 //SPREAD, because on RIGHT side of =
@@ -82,6 +153,7 @@ const x = [23, 5, 7];
 add(...x);
 restaurant.orderPizza("mushrooms", "onion", "olives", "spinach");
 restaurant.orderPizza("mushrooms");
+*/
 ////////////////////////////////////
 /*
 // The spread operator (...)
