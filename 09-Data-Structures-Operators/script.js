@@ -45,6 +45,123 @@ const restaurant = {
   }
 };
 
+const airline = "Tap Air Portugal";
+///////////////////////////////Working with strings part 2
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+console.log("alina".toUpperCase());
+
+//Fix capitalization in a name
+
+const passenger = "jOnAS"; //Jonas
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect =
+  passengerLower[0].toUpperCase() + passengerLower.slice(1);
+console.log(passengerCorrect);
+
+// Comparing email
+const email = "hello@hinas.io";
+const loginEmail = "   Hello@Jonas.Io \n";
+
+//const lowerEmail = loginEmail.toLowerCase();
+//const trimmedEmail = lowerEmail.trim();
+
+const normalisedEmail = loginEmail.toLowerCase().trim();
+console.log(normalisedEmail);
+console.log(email === normalisedEmail);
+
+/// replacing strings or parts of strings
+const priceGB = "288,97£";
+const priceUS = priceGB.replace("£", "$").replace(",", ".");
+console.log(priceUS);
+const announcement =
+  "All passengers come to boarding door 23. Boarding door 23!";
+console.log(announcement.replaceAll("door", "gate")); // replaces both ''door'' words with gate.In the course the method does not work
+// booleans: includes , starts with, ends with
+const plane = "Airbus A320neo";
+console.log(plane.includes("A320"));
+console.log(plane.includes("Boeing"));
+console.log(plane.startsWith("Air"));
+if (plane.startsWith("Airbus") && plane.endsWith("neo")) {
+  console.log("Part of the NEW Airbus family");
+}
+
+// practice exercise
+const checkBaggage = function (items) {
+  const baggage = items.toLowerCase();
+  if (baggage.includes("knife") || baggage.includes("gun")) {
+    console.log("You are not allowed on board");
+  } else {
+    console.log("Welcome aboard!");
+  }
+};
+checkBaggage(" I have a laptop, some Food and a pocket knife");
+checkBaggage("Socks and camera");
+checkBaggage("Got some snacks and a gun for protection");
+
+/////////////////////////////////Working with strings Part 1
+/*
+const plane = "A320";
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+console.log("B736"[0]);
+console.log(airline.length);
+console.log("B737".length);
+
+console.log(airline.indexOf("r"));
+console.log(airline.lastIndexOf("r"));
+console.log(airline.indexOf("Portugal"));
+
+console.log(airline.slice(4));
+console.log(airline.slice(4, 7));
+console.log(airline.slice(0, airline.indexOf(" ")));
+console.log(airline.slice(0, airline.lastIndexOf(" ") + 1));
+console.log(airline.slice(-2));
+console.log(airline.slice(1, -2));
+
+const checkMiddleSeat = function (seat) {
+  const s = seat.slice(-1);
+  if (s === "B" || s === "E") console.log("You got the middle seat");
+  else console.log("You got lucky!");
+};
+//B and E are middle seats
+checkMiddleSeat("11B");
+checkMiddleSeat("23C");
+checkMiddleSeat("3E");
+*/
+///////////////////////////////////////////////////////////////////////////////////
+// MAPS
+/*
+const rest = new Map();
+rest.set("name", "Classico Italiano");
+rest.set(1, "Firenze, Italy");
+console.log(rest.set(2, "Lisbon, Portugal"));
+rest
+  .set("categories", ["Italian", "Pizzeria", "Vegetarian", "Organic"])
+  .set("open", 11)
+  .set("close", 23)
+  .set(true, "We are open :D")
+  .set(false, "We are closed:(");
+console.log(rest.get("name"));
+console.log(rest.get(true));
+console.log(rest.get(1));
+
+const time = 8;
+console.log(rest.get(time > rest.get("open") && time < rest.get("close")));
+
+console.log(rest.has("categories"));
+rest.delete(2);
+//rest.clear();
+const arr = [1, 2];
+rest.set(arr, "Test");
+rest.set(document.querySelector("h1"), "Heading");
+console.log(rest);
+console.log(rest.size);
+
+console.log(rest.get(arr));
+*/
+///////////////////////////////////////
 //117. Maps: fundamentals
 /////////////////////////////////////////////////////
 //114. Looping objects: Object Keys, Values , and Entries
@@ -414,7 +531,7 @@ GOOD LUCK 😀
 */
 
 //1.
-for (const [i, player] of game.scored.entries())
+/* for (const [i, player] of game.scored.entries())
   console.log(`Goal ${i + 1}: ${player}`);
 //2.
 const odds = Object.values(game.odds);
@@ -429,6 +546,8 @@ for (const [team, odd] of Object.entries(game.odds)) {
   const teamStr = team === "x" ? "draw" : `victory ${game[team]}`;
   console.log(`Odd of  ${teamStr} ${odd}`);
 }
+
+*/
 ////////////////////////////////////////////////////////////////////
 // CHALLENGE 1
 /*
