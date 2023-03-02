@@ -34,6 +34,7 @@ console.log(flight);
 console.log(jonas);
 */
 
+/*
 const oneWord = function (str) {
   return str.replace(/ /g, "").toLowerCase();
 };
@@ -56,3 +57,36 @@ const high5 = function () {
 };
 document.body.addEventListener("click", high5);
 ["Jonas", "Martha", "Adam"].forEach(high5);
+*/
+
+////////////////////// FUNCTIONS RETURNING FUNCTIONS
+
+/* const greet = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
+
+const greeterHey = greet("Hey");
+greeterHey("Jonas");
+greeterHey("Steven");
+
+const greetArr = greeting => name => console.log(`${greeting} ${name}`);
+greetArr("Hi")("Jonas");
+*/
+
+/////// Closures
+
+const secureBooking = function () {
+  let passengerCount = 0;
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passengers`);
+  };
+};
+const booker = secureBooking();
+
+booker();
+booker();
+booker();
+console.dir(booker);
